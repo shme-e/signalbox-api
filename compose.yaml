@@ -4,6 +4,7 @@ networks:
 
 services:
   signalbox-api:
+    container_name: signalbox-api
     build:
       context: .
       dockerfile: Dockerfile
