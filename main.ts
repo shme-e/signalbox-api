@@ -47,6 +47,8 @@ app.get("/", async (req, res) => {
           platform: location.platform || "1"
         }})
     }
+
+    response["time"] = new Date().toLocaleTimeString("en-GB", { hour: "2-digit", minute: "2-digit" });
   }
 
   return res.json(response)
