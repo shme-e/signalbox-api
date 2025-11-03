@@ -1,0 +1,15 @@
+networks:
+  apps:
+    external: true
+
+services:
+  signalbox-api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8000:8000"
+    networks:
+      - apps
+    env_file:
+      - .env
