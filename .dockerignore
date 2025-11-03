@@ -1,3 +1,7 @@
 .env
 id_rsa
 id_rsa.pub
+key
+key.pub
+compose.yaml
+Dockerfile
